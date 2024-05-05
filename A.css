@@ -126,7 +126,14 @@ nav ul li:hover {
 	background-color: rgb(0, 119, 16);
 }
 
+.esg-bloco {
+	padding: 7%;
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(207, 207, 207));
+	border-radius: 25px;
+}
+
 .txtesg {
+	color: black;
 	padding: 5% 7% 5% 10%
 }
 
@@ -134,8 +141,13 @@ nav ul li:hover {
 	font-size: 32px;
 }
 
-.txtesg span {
-	padding: 4%;
+.letras {
+	padding-left: 6%;
+}
+
+.txtesg .destaque {
+	color: rgb(0, 160, 0);
+	padding: 2%;
 	font-weight: 500;
 	font-size: 100px;
 }
