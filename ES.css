@@ -1,7 +1,6 @@
 * {
 	font-family: 'Helvetica', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	text-decoration: none;
-	list-style: none;
 }
 
 body {
@@ -52,6 +51,7 @@ header {
 }
 
 .menu-bar.abrir-menu nav ul li {
+	list-style: none;
 	width: 85%;
 	height: auto;
 	margin: 5% 0;
@@ -109,45 +109,69 @@ nav ul li:hover {
 
 #inicio {
 	width: 100%;
-	height: 300px;
-	background-image: url(Imagens/Banner.png);
+	height: 450px;
+	background: url(Imagens/BannerIni.png);
 	background-size: contain;
 	border-bottom: 20px solid white;
 }
 
 .txtini {
 	text-align: center;
-	padding-top: 15%;
+	padding-top: 20%;
 	font-size: 30px;
 	font-weight: 900;
 	color: white;
 }
 
+/*----------------------------------------Banner--------------------------------------------------*/
+
+.redes-inicio {
+	margin-top: 10%;
+	text-align: center;
+	color: rgb(0, 109, 18);
+}
+
+.redes-inicio i {
+	padding: 1%;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+#banner {
+	margin-top: 2%;
+	width: 100%;
+	height: 500px;
+	background: url(Imagens/Banner.jpg);
+	background-size: cover;
+	border-bottom: 8px solid white;
+}
+
 /*------------------------------------- Introdução -----------------------------------*/
 
 #introducao {
-	padding: 0 5% 0 5%;
+	padding: 0 7%;
 	background: url(Imagens/FundoInt.png);
 	background-size: contain;
 	border-bottom: 8px solid white;
 }
 
-.int {
+.int-bloco {
 	padding: 20% 7% 10% 7%;
 	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(253, 253, 253));
 	text-align: center;
 }
 
-.int h1 {
-	font-size: 40px;
+.int-bloco h1 {
+	font-size: 30px;
 	font-weight: 900;
 }
 
 /*---------------------------------------- ESG -----------------------------------*/
 
 #esg {
-	padding: 0 5%;
-	background: linear-gradient(to right, rgb(0, 119, 16), rgb(0, 59, 0));
+	padding: 0 7%;
+	background: linear-gradient( to bottom right, rgb(1, 153, 21), rgb(1, 56, 1));
+	border-bottom: 8px solid white;
 }
 
 .esg-bloco {
@@ -156,8 +180,8 @@ nav ul li:hover {
 	background-color: rgb(247, 247, 247);
 }
 
-.esg-bloco h3 {
-	font-size: 40px;
+.esg-bloco h1 {
+	font-size: 35px;
 	font-weight: 900;
 }
 
@@ -186,7 +210,19 @@ nav ul li:hover {
 /*-----------------------------------Importância ESG ---------------------------------------------------*/
 
 #impesg {
-	color: black;
+	padding: 0 7%;
+	background-color: rgb(212, 212, 92);
+}
+
+.imp-bloco {
+	text-align: center;
+	padding: 15% 5% 5% 5%;
+	background-color: rgb(255, 255, 255);
+}
+
+.imp-bloco h1 {
+	font-size: 35px;
+	font-weight: 900;
 }
 
 /*-------------------------------------- Fontes -----------------------------------*/
@@ -194,18 +230,28 @@ nav ul li:hover {
 #fontes {
 	padding: 15%;
 	background-color: rgb(224, 200, 61);
-}
-
-.txtfonte {
-	padding: 5% 7%;
-}
-
-.txtfonte a {
-	text-decoration: none;
 	color: white;
 }
 
-.txtfonte a:hover {
+.txt-font {
+	text-align: left;
+	padding: 5% 7%;
+}
+
+.txt-font h1 {
+	text-align: center;
+	font-size: 35px;
+	font-weight: 900;
+}
+
+.txt-font a {
+	text-align: left;
+	text-decoration: none;
+	list-style: circle;
+	color: white;
+}
+
+.txt-font a:hover {
 	color: rgb(194, 194, 194);
 }
 
@@ -213,6 +259,7 @@ nav ul li:hover {
 
 
 footer {
+	list-style: none;
 	display: flex;
 	gap: 10rem;
 	justify-content: center;
@@ -221,6 +268,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	background-color: rgb(6, 36, 0);
+	color: white;
 }
 
 footer i {
