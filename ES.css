@@ -121,7 +121,7 @@ nav ul li:hover {
 
 .txtini {
 	text-align: center;
-	padding-top: 20%;
+	padding-top: 10%;
 	font-size: 30px;
 	font-weight: 900;
 	color: white;
@@ -152,7 +152,7 @@ nav ul li:hover {
 
 /*------------------------------------- Introdução -----------------------------------*/
 
-#introducao {
+#int {
 	padding: 0 7%;
 	background: url(Imagens/FundoInt.png);
 	background-size: contain;
@@ -260,11 +260,39 @@ nav ul li:hover {
 	font-weight: 900;
 }
 
-/*-------------------------------------- Fontes -----------------------------------*/
+/*---------------------------------Cidade Inteligente-----------------------------------------------------------------------*/
+
+#cidint {
+	padding: 0 7%;
+	background-color: aqua;
+	border-bottom: 8px solid white;
+}
+
+.cidint-bloco {
+	text-align: center;
+	padding: 15% 5% 5% 5%;
+	background-color: rgb(255, 255, 255);
+}
+
+/*---------------------------------Cidade Sustentável-------------------------------------------------------------------*/
+
+#cidsus {
+	padding: 0 7%;
+	background-color: rgb(0, 187, 100);
+	border-bottom: 8px solid white;
+}
+
+.cidsus-bloco {
+	text-align: center;
+	padding: 15% 5% 5% 5%;
+	background-color: rgb(255, 255, 255);
+}
+
+/*-------------------------------------- Fontes -------------------------------------------------------------*/
 
 #fontes {
 	padding: 15%;
-	background-color: rgb(224, 200, 61);
+	background-color: rgb(0, 0, 0);
 	color: white;
 }
 
@@ -307,6 +335,7 @@ footer {
 }
 
 footer i {
+	 
 	padding: 5% 10% 0 0;
 	font-size: 50px;
 	cursor: pointer;
@@ -317,6 +346,7 @@ footer i:hover {
 }
 
 .meio-contato li {
+	width: 200px;
 	padding-left: 20%;
 }
 
