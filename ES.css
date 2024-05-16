@@ -61,7 +61,7 @@ header {
 	height: auto;
 	margin: 5% 0;
 	padding-left: 5%;
-	font-size: 22px;
+	font-size: 20px;
 	border-radius: 10px;
 }
 
@@ -89,8 +89,8 @@ nav ul {
 nav ul li a {
 	color: black;
 	text-decoration: none;
-	font-weight: 650;
-	line-height: 5rem;
+	font-weight: 600;
+	line-height: 4rem;
 	border-radius: 10px;
 }
 
@@ -113,6 +113,9 @@ nav ul li:hover {
 /*----------------------------------------Início-------------------------------------------------*/
 
 #inicio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 450px;
 	background: url(Imagens/BannerIni.png);
@@ -121,8 +124,6 @@ nav ul li:hover {
 }
 
 .txtini {
-	text-align: center;
-	padding-top: 20%;
 	font-size: 30px;
 	font-weight: 900;
 	color: white;
@@ -153,7 +154,7 @@ nav ul li:hover {
 
 /*------------------------------------- Introdução -----------------------------------*/
 
-#introducao {
+#intro {
 	padding: 0 7%;
 	background: url(Imagens/FundoInt.png);
 	background-size: contain;
@@ -189,7 +190,7 @@ nav ul li:hover {
 
 #esg {
 	padding: 0 7%;
-	background: linear-gradient( to bottom right, rgb(1, 153, 21), rgb(1, 56, 1));
+	background: linear-gradient( to bottom right, rgb(1, 153, 21), rgb(150, 255, 167), rgb(0, 71, 0), rgb(0, 51, 0));
 	border-bottom: 8px solid white;
 }
 
@@ -216,22 +217,21 @@ nav ul li:hover {
 }
 
 .btn {
-
 	display: inline;
 	justify-content: center;
 	margin: 0 5%;
-	padding: 4% 7%;
+	padding: 3% 8%;
 	font-size: 20px;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid white;
 	border-radius: 10px;
 	color: rgb(33, 129, 49);
-	font-size: 35px;
+	font-size: 40px;
 	font-weight: 900;
 	transition: 0.5s;
 }
 
-.btn:hover {
+.btn:focus {
 	background-color: rgb(199, 255, 204);
 	transform: scale(1.1);
 }
@@ -241,7 +241,7 @@ nav ul li:hover {
 	background-color: rgb(0, 49, 7);
 	color: rgb(255, 255, 255);
 	font-size: 20px;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 #txtinterativo h1 {
@@ -253,6 +253,8 @@ nav ul li:hover {
 } 
 
 .letras {
+	display: flex;
+	justify-content: center;
 	font-size: 25px;
 }
 
@@ -270,7 +272,7 @@ nav ul li:hover {
 
 #impesg {
 	padding: 0 7%;
-	background-color: rgb(212, 212, 92);
+	background: url(Imagens/FundoImpesg.png);
 	border-bottom: 8px solid white;
 }
 
@@ -285,11 +287,39 @@ nav ul li:hover {
 	font-weight: 900;
 }
 
+/*--------------------------------- Cidade Inteligente -----------------------------------------------------------------------*/
+
+#cidint {
+	padding: 0 7%;
+	background-color: aqua;
+	border-bottom: 8px solid white;
+}
+
+.cidint-bloco {
+	text-align: center;
+	padding: 15% 5% 5% 5%;
+	background-color: rgb(255, 255, 255);
+}
+
+/*--------------------------------- Cidade Sustentável -------------------------------------------------------------------*/
+
+#cidsus {
+	padding: 0 7%;
+	background-color: rgb(0, 187, 100);
+	border-bottom: 8px solid white;
+}
+
+.cidsus-bloco {
+	text-align: center;
+	padding: 15% 5% 5% 5%;
+	background-color: rgb(255, 255, 255);
+}
+
 /*-------------------------------------- Fontes -----------------------------------*/
 
 #fontes {
 	padding: 15%;
-	background-color: rgb(224, 200, 61);
+	background: linear-gradient(to top, rgb(236, 210, 61),rgb(207, 185, 57));
 	color: white;
 }
 
@@ -341,8 +371,12 @@ footer i:hover {
 	color: rgb(82, 82, 82);
 }
 
+.meio-contato {
+	width: 220px;
+}
+
 .meio-contato li {
-	padding-left: 20%;
+	padding-left: 5%;
 }
 
 .meio-contato a {
