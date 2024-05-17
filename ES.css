@@ -114,6 +114,23 @@ nav ul li:hover {
 	padding: 3% 6%;
 }
 
+.sec {
+	padding: 0 7%;
+	border-bottom: 8px solid white;
+}
+
+.bloco {
+	text-align: center;
+	padding: 16% 7% 10%;
+	background-color: white;
+}
+
+.bloco h1 {
+	font-size: 35px;
+	font-weight: 900;
+}
+
+
 /*----------------------------------------Início-------------------------------------------------*/
 
 #inicio {
@@ -163,55 +180,33 @@ nav ul li:hover {
 
 /*------------------------------------- Introdução -----------------------------------*/
 
-#intro {
-	padding: 0 7%;
+.intro {
 	background: url(Imagens/FundoInt.png);
 	background-size: contain;
-	border-bottom: 8px solid white;
 }
 
-.int-bloco {
-	padding: 20% 7% 10%;
-	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(253, 253, 253));
-	text-align: center;
-}
-
-.int-bloco h1 {
-	font-size: 35px;
-	font-weight: 900;
+.bloco.int h1 {
 	color: rgb(0, 146, 24);
 }
 
-.int-bloco a{
+.bloco.int a {
 	padding: 5%;
 	background-color: rgb(1, 153, 21);
 	color: white;
 	font-size: 25px;
-	font-weight: 700;;
+	font-weight: 700;
+	;
 	border-radius: 20px;
 }
 
-.int-bloco a:hover {
-	background-color:rgb(0, 109, 18)
+.bloco.int a:hover {
+	background-color: rgb(0, 109, 18)
 }
 
 /*---------------------------------------- ESG -----------------------------------*/
 
-#esg {
-	padding: 0 7%;
-	background: linear-gradient( to bottom right, rgb(1, 153, 21), rgb(150, 255, 167), rgb(0, 71, 0), rgb(0, 116, 25));
-	border-bottom: 8px solid white;
-}
-
-.esg-bloco {
-	text-align: center;
-	padding: 10% 7%;
-	background-color: rgb(247, 247, 247);
-}
-
-.esg-bloco h1 {
-	font-size: 35px;
-	font-weight: 900;
+.esg {
+	background: linear-gradient(to bottom right, rgb(1, 153, 21), rgb(150, 255, 167), rgb(0, 71, 0), rgb(0, 116, 25));
 }
 
 .esginterativo {
@@ -260,7 +255,7 @@ nav ul li:hover {
 
 #txtinterativo li {
 	padding: 2.5%;
-} 
+}
 
 .letras {
 	display: flex;
@@ -279,95 +274,60 @@ nav ul li:hover {
 	height: auto;
 }
 
-.esg-bloco .txt .praticas {
+.bloco.esg .txt .praticas {
 	display: flex;
 	flex-direction: row;
 }
 
-.esg-bloco .txt .praticas ul {
+.bloco.esg .txt .praticas ul {
 	display: flex;
 	flex-direction: column;
 }
 
-.esg-bloco .txt .praticas ul li {
+.blocvco.esg .txt .praticas ul li {
 	line-height: 3rem;
 }
 
 /*-----------------------------------Importância ESG ---------------------------------------------------*/
 
-#impesg {
-	padding: 0 7%;
+.impesg {
 	background: url(Imagens/FundoImpesg.png);
-	border-bottom: 8px solid white;
-}
-
-.imp-bloco {
-	text-align: center;
-	padding: 15% 5% 5%;
-	background-color: rgb(255, 255, 255);
-}
-
-.imp-bloco h1 {
-	font-size: 35px;
-	font-weight: 900;
 }
 
 /*--------------------------------- Cidade Inteligente -----------------------------------------------------------------------*/
 
-#cidint {
-	padding: 0 7%;
+.cidint {
 	background: url(Imagens/FundoCidint.png);
-	border-bottom: 8px solid white;
-}
-
-.cidint-bloco {
-	text-align: center;
-	padding: 15% 5% 5%;
-	background-color: rgb(255, 255, 255);
 }
 
 /*--------------------------------- Cidade Sustentável -------------------------------------------------------------------*/
 
-#cidsus {
-	padding: 0 7%;
+.cidsus {
 	background: url(Imagens/FundoCidsus.png);
-	border-bottom: 8px solid white;
-}
-
-.cidsus-bloco {
-	text-align: center;
-	padding: 15% 5% 5%;
-	background-color: rgb(255, 255, 255);
 }
 
 /*-------------------------------------- Fontes -----------------------------------*/
 
 #fontes {
 	padding: 10%;
-	background-color: black;
+	background-color: rgb(0, 51, 21);
 	color: white;
 }
 
 .txt-font {
 	text-align: left;
-	padding: 15% 5% 5%;
+	line-height: 5rem;
 }
 
 .txt-font h1 {
+	padding: 5%;
 	text-align: center;
 	font-size: 35px;
 	font-weight: 900;
 }
 
-.txt-font li {
-	transition: 0.5s;
-}
-
-.txt-font li:hover {
-	transform: scale(1.1);
-}
-
 .txt-font a {
+	padding: 10% 5%;
 	text-align: left;
 	text-decoration: none;
 	list-style: circle;
@@ -439,17 +399,39 @@ footer i:hover {
 		width: 100%;
 	}
 
+	h1 {
+		line-height: 4rem;
+	}
+
+	.sec {
+		padding: 0 5%;
+	}
+
+	.bloco {
+		padding: 16% 4% 10%;
+	}
+
 	.menu-bar.abrir-menu {
-		width: 65%;
+		width: 75%;
+	}
+
+	.menu-bar.abrir-menu nav ul li {
+		font-size: 18px;
 	}
 
 	#inicio {
+		height: 400px;
 		text-align: center;
+		background-position: center;
 	}
 
 	.txt-ini {
 		line-height: 4rem;
 		padding: 5%;
+	}
+
+	#banner {
+		background-position: center;
 	}
 
 	.btn {
@@ -458,6 +440,10 @@ footer i:hover {
 
 	.esg-bloco .txt .praticas {
 		flex-direction: column;
+	}
+
+	.txt-font a {
+		padding: 10% 0;
 	}
 
 	footer {
