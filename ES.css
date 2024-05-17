@@ -28,7 +28,7 @@ header {
 	top: 0;
 	right: 0;
 	position: fixed;
-	padding: 10px 20%;
+	padding: 10px 22%;
 	background-color: rgb(255, 255, 255);
 }
 
@@ -67,6 +67,7 @@ header {
 
 .open-menu i {
 	top: 0;
+	width: 65px;
 	padding-left: 75%;
 	font-size: 50px;
 	cursor: pointer;
@@ -128,6 +129,10 @@ nav ul li:hover {
 .bloco h1 {
 	font-size: 35px;
 	font-weight: 900;
+}
+
+h1 {
+	line-height: 3rem;
 }
 
 
@@ -284,7 +289,7 @@ nav ul li:hover {
 	flex-direction: column;
 }
 
-.blocvco.esg .txt .praticas ul li {
+.bloco.esg .txt .praticas ul li {
 	line-height: 3rem;
 }
 
@@ -393,10 +398,11 @@ footer i:hover {
 
 /*--------------------------------- Config. Responsividade -------------------------------------------*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
 
 	header {
 		width: 100%;
+		padding: 10px 15%;
 	}
 
 	h1 {
@@ -408,7 +414,7 @@ footer i:hover {
 	}
 
 	.bloco {
-		padding: 16% 4% 10%;
+		padding: 16% 2% 10%;
 	}
 
 	.menu-bar.abrir-menu {
@@ -419,8 +425,14 @@ footer i:hover {
 		font-size: 18px;
 	}
 
+	.open-menu i {
+		width: 80px;
+		padding-left: 30%;
+	}
+
 	#inicio {
 		height: 400px;
+		padding-top: 10%;
 		text-align: center;
 		background-position: center;
 	}
@@ -435,11 +447,20 @@ footer i:hover {
 	}
 
 	.btn {
-		margin: 2% 4%
+		margin: 2% 2.5%
+	}
+
+	.esgimg img {
+		width: 120%;
 	}
 
 	.esg-bloco .txt .praticas {
 		flex-direction: column;
+	}
+
+	#fontes {
+		font-size: 16px;
+		padding: 7% 4%;
 	}
 
 	.txt-font a {
@@ -447,11 +468,22 @@ footer i:hover {
 	}
 
 	footer {
+		flex-direction: column;
 		gap: 0;
+		font-size: 20px;
+	}
+
+	footer i {
+		padding: 10% 5% 0 10%;
+		font-size: 45px;
 	}
 
 	.meio-contato {
-		padding-left: 10%;
+		line-height: 2rem;
+		padding: 10% 5%;
 	}
 
+	.meio-contato h3 {
+		font-size: 20px;
+	}
 }
