@@ -60,8 +60,8 @@ header {
 	width: 85%;
 	height: auto;
 	margin: 5% 0;
-	padding-left: 5%;
-	font-size: 20px;
+	padding-left: 1%;
+	font-size: 16px;
 	border-radius: 10px;
 }
 
@@ -91,7 +91,7 @@ nav ul li a {
 	color: black;
 	text-decoration: none;
 	font-weight: 600;
-	line-height: 4rem;
+	line-height: 3rem;
 	border-radius: 10px;
 }
 
@@ -105,13 +105,15 @@ nav ul li:hover {
 }
 
 .fa-chevron-right {
-	padding: 7% 5%;
+	display: flex;
+	align-items: center;
+	padding: 5%;
 	float: right;
 	color: black;
 }
 
 .txt {
-	text-align: left;
+	text-align: justify;
 	padding: 3% 6%;
 }
 
@@ -150,6 +152,9 @@ h1 {
 }
 
 .txt-ini {
+	padding: 0 1%;
+	background-color: rgba(0, 88, 0, 0.726);
+	border-radius: 20px;
 	font-size: 30px;
 	font-weight: 900;
 	color: white;
@@ -183,7 +188,7 @@ h1 {
 	border-bottom: 8px solid white;
 }
 
-/*------------------------------------- Introdução -----------------------------------*/
+/*------------------------------------- Introdução -------------------------------------------------------*/
 
 .intro {
 	background: url(Imagens/FundoInt.png);
@@ -208,7 +213,7 @@ h1 {
 	background-color: rgb(0, 109, 18)
 }
 
-/*---------------------------------------- ESG -----------------------------------*/
+/*---------------------------------------- ESG ------------------------------------------------------------*/
 
 .esg {
 	background: linear-gradient(to bottom right, rgb(1, 153, 21), rgb(150, 255, 167), rgb(0, 71, 0), rgb(0, 116, 25));
@@ -293,25 +298,54 @@ h1 {
 	line-height: 3rem;
 }
 
-/*-----------------------------------Importância ESG ---------------------------------------------------*/
+/*-----------------------------------Importância ESG ---------------------------------------------------------------------*/
 
 .impesg {
 	background: url(Imagens/FundoImpesg.png);
+	background-size: contain;
 }
 
-/*--------------------------------- Cidade Inteligente -----------------------------------------------------------------------*/
+/*--------------------------------- Cidade Inteligente --------------------------------------------------------------------*/
 
 .cidint {
 	background: url(Imagens/FundoCidint.png);
+	background-size: contain;
+}
+
+.intimg {
+	padding: 10% 0;
+}
+
+.intimg img {
+	width: 80%;
+	height: auto;
 }
 
 /*--------------------------------- Cidade Sustentável -------------------------------------------------------------------*/
 
 .cidsus {
 	background: url(Imagens/FundoCidsus.png);
+	background-size: contain;
 }
 
-/*-------------------------------------- Fontes -----------------------------------*/
+.susimg {
+	padding: 10% 0;
+}
+
+.susimg img {
+	width: 80%;
+	height: auto;
+}
+
+/*----------------------------------- Conclusão---------------------------------------------------------------------------*/
+
+.conc {
+	background: url(Imagens/FundoConc.png);
+	background-size: contain;
+
+}
+
+/*-------------------------------------- Fontes --------------------------------------------------------------------------*/
 
 #fontes {
 	padding: 10%;
@@ -320,30 +354,41 @@ h1 {
 }
 
 .txt-font {
+	padding: 5% 0;
+	background-color: rgb(17, 17, 17);
+	border-radius: 20px;
 	text-align: left;
 	line-height: 5rem;
 }
 
 .txt-font h1 {
-	padding: 5%;
 	text-align: center;
 	font-size: 35px;
 	font-weight: 900;
 }
 
+.txt-font li {
+	list-style: none;
+	transition: 0.5s;
+}
+
+.txt-font li:hover {
+	transform: scale(1.1);
+}
+
 .txt-font a {
-	padding: 10% 5%;
+	padding-left: 10%;
 	text-align: left;
 	text-decoration: none;
 	list-style: circle;
-	color: white;
+	color: rgb(204, 204, 204);
 	transition: 0.5s;
 }
 
 .txt-font a:hover {
-	color: rgb(194, 194, 194);
-	transform: scale(1.2);
+	color: rgb(255, 255, 255);
 }
+
 
 /*-------------------------------------- Rodapé -----------------------------------*/
 
@@ -409,6 +454,10 @@ footer i:hover {
 		line-height: 4rem;
 	}
 
+	.txt {
+		text-align: left;
+	}
+
 	.sec {
 		padding: 0 5%;
 	}
@@ -421,25 +470,22 @@ footer i:hover {
 		width: 75%;
 	}
 
-	.menu-bar.abrir-menu nav ul li {
-		font-size: 18px;
-	}
-
 	.open-menu i {
 		width: 80px;
 		padding-left: 30%;
 	}
 
 	#inicio {
-		height: 400px;
-		padding-top: 10%;
+		padding: 12% 0;
 		text-align: center;
-		background-position: center;
+		background-position: bottom;
 	}
 
 	.txt-ini {
+		margin: 5%;
+		font-size: 20px;
 		line-height: 4rem;
-		padding: 5%;
+		padding: 4%;
 	}
 
 	#banner {
@@ -448,6 +494,10 @@ footer i:hover {
 
 	.btn {
 		margin: 2% 2.5%
+	}
+
+	#txtinterativo h1 {
+		font-size: 26px;
 	}
 
 	.esgimg img {
@@ -459,8 +509,16 @@ footer i:hover {
 	}
 
 	#fontes {
-		font-size: 16px;
+		font-size: 15px;
 		padding: 7% 4%;
+	}
+
+	.txt-font {
+		padding: 5%;
+	}
+
+	.txt-font h1 {
+		font-size: 26px;
 	}
 
 	.txt-font a {
