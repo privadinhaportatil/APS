@@ -505,7 +505,8 @@ footer i:hover {
 	}
 
 	.esgimg img {
-		width: 120%;
+		padding-left: 0;
+		width: 100%;
 	}
 
 	.esg-bloco .txt .praticas {
