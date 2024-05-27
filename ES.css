@@ -341,7 +341,7 @@ h1 {
 
 .conc {
 	background: url(Imagens/FundoConc.png);
-	background-size: contain;
+	background-size: cover;
 
 }
 
@@ -455,6 +455,7 @@ footer i:hover {
 	}
 
 	.txt {
+		font-size: 16px;
 		text-align: left;
 	}
 
